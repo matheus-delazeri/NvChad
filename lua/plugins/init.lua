@@ -29,7 +29,7 @@ local default_plugins = {
     end,
   },
 
-  {
+ {
     "NvChad/nvim-colorizer.lua",
     init = function()
       require("core.utils").lazy_load "nvim-colorizer.lua"
@@ -118,7 +118,7 @@ local default_plugins = {
   -- lsp stuff
   {
     "williamboman/mason.nvim",
-    cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUpdate" },
+    cmd = { "Mason", "MasonInstall", "MasonInstallAll", "MasonUninstall", "MasonUninstallAll", "MasonLog" },
     opts = function()
       return require "plugins.configs.mason"
     end,
